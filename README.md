@@ -1,4 +1,6 @@
-# source_viewer
+# Source viewer
+
+A vim plugin for displaying source code from logs when log line contains pattern <filename.xyz#3>.
 
 ## Installation
 
@@ -17,7 +19,7 @@ Use your plugin manager of choice.
   - Run `:PlugInstall`
 
 
-Create environment variable for your source code location.
+Create environment variable for your source code root location.
 
     export SOURCE_VAR=/../path/../..
     
@@ -25,13 +27,15 @@ Copy BufOnly.vim (http://www.vim.org/scripts/script.php?script_id=1071) plugin i
     
     ../.vim/plugin/
     
-Copy inside your .vimrc
+Copy into .vimrc
 
     set runtimepath^=~/.vim/bundle/source_viewer
 
-To add shortcut copy inside .vimrc (Ctrl + m)
+To add shortcut (Ctrl + m) copy into .vimrc 
 
     map <C-m> :Sc<CR>
+    
+    
     
     
 
