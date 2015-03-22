@@ -1,0 +1,25 @@
+*source_viewer.txt* A short multi line description of your plugin
+
+===============================================================================
+CONTENTS                                                        *source_viewer*
+
+    1. Intro ............................................ |source_viewer-intro|
+    2. Requirements .............................. |source_viewer-requirements|
+    3. Usage ............................................ |source_viewer-usage|
+    4. Licence ........................................ |source_viewer-licence|
+===============================================================================
+1. Intro                                                  *source_viewer-intro*
+
+Overview of plugin
+
+2. Requirements                                    *source_viewer-requirements*
+
+What additional programs are required to run the plugin
+
+3. Usage                                                  *source_viewer-usage*
+
+How to use the plugin. What functions does it give the user?
+
+4. Licence                                              *source_viewer-licence*
+
+This is open source make sure to include a licence
