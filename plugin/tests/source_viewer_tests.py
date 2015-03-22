@@ -33,36 +33,12 @@ class ExtractLineNumber(TestCase):
         self.assertEqual(viewer.extract_line_number("12:23:12 <main.cpp#>"), 0)
 
 
-class SourceViewerTest(TestCase):
-
-
-    def test_when_does_not_contain_file_signature_return_default_values(self):
-        file_name, line_number = viewer.source_signature('', '')
-        self.assertEqual(file_name, '')
-        self.assertEqual(line_number, 0)
-
-    def test_when_does_contain_file_signature_return_default_values(self):
-        file_name, line_number = viewer.source_signature(\
-            '12:23:12 <main.cpp#3>', '/home/sgluter/Programming/python/source_viewer/ftplugin/tests')
-
-        self.assertEqual('/home/sgluter/Programming/python/source_viewer/ftplugin/tests/test_directory/matching_file/main.cpp', file_name)
-        self.assertEqual(3, line_number)
-
-    def test_when_path_is_empty_return_default_values(self):
-        file_name, line_number = viewer.source_signature(\
-            '12:23:12 <main.cpp#3>', '')
-
-        self.assertEqual('', file_name)
-        self.assertEqual(0, line_number)
-
-
 if __name__ == "__main__":
 
     loader = TestLoader()
     suite = TestSuite((
         loader.loadTestsFromTestCase(ExtractFileNameTest),
         loader.loadTestsFromTestCase(ExtractLineNumber),
-        loader.loadTestsFromTestCase(SourceViewerTest),
         ))
 
     runner = TextTestRunner(verbosity = 2)

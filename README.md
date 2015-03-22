@@ -16,5 +16,22 @@ Use your plugin manager of choice.
   - Add `Plug 'https://github.com/randspy/source_viewer'` to .vimrc
   - Run `:PlugInstall`
 
-## Todo
+
+Create environment variable for your source code location.
+
+    export SOURCE_VAR=/../path/../..
+    
+Copy BufOnly.vim (http://www.vim.org/scripts/script.php?script_id=1071) plugin into 
+    
+    ../.vim/plugin/
+    
+Copy inside your .vimrc
+
+    set runtimepath^=~/.vim/bundle/source_viewer
+
+To add shortcut copy inside .vimrc (Ctrl + m)
+
+    map <C-m> :Sc<CR>
+    
+    
 
